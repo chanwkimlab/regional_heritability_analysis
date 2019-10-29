@@ -1,5 +1,5 @@
-Regional Heritability Analysis `v1.0`
-===================
+# Regional Heritability Analysis `v1.0`
+
 <!--
 [![DOI](https://zenodo.org/badge/.svg)](https://zenodo.org/badge/latestdoi/)
 -->
@@ -8,14 +8,19 @@ Regional Heritability Analysis `v1.0`
 
 `Regional Heritability Analysis`  is a software package for estimating regional heritability of small genomic segments.
 
-
-![Regional Heritability Atlas](github_images/donut_leg_fat_percentage.png)
-
 The estimated regional heritability over different scales (chromosome, 128Mb, 64Mb, 32Mb, 16Mb, and 8Mb) simultaneously shown in a nested donut plot. The chromosome to which each segment belongs are indicated by background color of the segment. Fraction of heritability which each segment explains can be measured using outer circular gauge. For plots across all traits, visit our website (Regional Heritability Atlas, https://h2atlas.hanlab.snu.ac.kr). 
+
+### Example
+#### Nested donut plot
+![Regional Heritability Atlas](github_images/donut_leg_fat_percentage.png)
+#### Comparison of regional heritability between two traits
+![Regional Heritability Atlas](github_images/comparison.png)
+#### Correlation between phenotypes calculated from regional heritability
+![Regional Heritability Atlas](github_images/correlation.png)
 
 
 ## Functionality
-This package provides full pipeline of data analysis from downloading data to plotting results.
+This package provides full pipeline of data analysis from downloading data to visualizing results.
 * download GWAS summary statistics from Neale lab
 * download raw genotype data of 1000 Genome phase3 in plink format
 * munge summary statistics (wrapper for munge_sumstats.py from https://github.com/bulik/ldsc)
