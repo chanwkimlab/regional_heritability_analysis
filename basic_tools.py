@@ -21,27 +21,11 @@ def run_command(command,quiet=False):
 
 def code_to_filename(phenotype_code):
     return phenotypes_filtered.loc[phenotype_code]['File']
-#[phenotypes_filtered['phenotype']==phenotype_code].iloc[0]['File']
-    """
-    ukbb_table_select=ukbb_table_filtered[ukbb_table_filtered['Phenotype Code'].str.replace('_irnt','')==phenotype_code]
-    if ukbb_table_select.shape[0]==0:
-        print("phenotype code does not exist in ukbb_table")
-    elif ukbb_table_select.shape[0]==2:
-        print("duplicated phenotype code")
-    elif ukbb_table_select.shape[0]==1:
-        return ukbb_table_select['File'].values[0]
-    else:
-        print("code to path conversion error.")
-    """
+
     
 def code_to_description(phenotype_code):
     return phenotypes_filtered.loc[phenotype_code]['description']
-    """
-    ukbb_table_select=ukbb_table_filtered[ukbb_table_filtered['Phenotype Code'].str.replace('_irnt','')==phenotype_code]
-    return ukbb_table_select.iloc[0]['Phenotype Description']
-    #phenotypes_select=phenotypes[phenotypes['phenotype'].str.contains(phenotype_code)]
-    #return phenotypes_select.iloc[0]['description']
-    """
+
 def read_gwas(phenotype_code):
     filename=code_to_filename(phenotype_code)
     gwas_result=pd.read_csv(gwas_path+filename,sep='\t',compression='gzip')
@@ -89,46 +73,6 @@ def index_format(index,mode='minimal',compensate=0):
         index_new.append(a)
     return index_new
 
-"""
-def minimal_to_chr(index):
-    index_new=[]
-    for col in index:
-        col_dot=col.split('.')
-        a="{:02d}".format(int(col_dot[0]))
-        index_new.append(a)
-    return index_new
-"""
-"""
-def cm_minimal_to_float(index,compensate=0.0):
-    index_new=[]
-    max_cm={1:294,10:184,11:162,12:176,13:130,14:117,15:151,16:132,17:129,18:121,19:107,2:275,20:111,21:65,22:76,3:228,4:221,5:209,6:199,7:191,8:179,9:181}
-    max_cm=[max_cm[i] for i in range(1,22+1)]
-    for col in index:
-        #col_dot=col.split('.')
-        #a="{:02d}".format(int(col_dot[0]))
-        col=float(col)
-        col_adjusted=int(col)+1000*(col-int(col)+compensate)/(max_cm[int(col)-1])
-        index_new.append(col_adjusted)
-        #print(col,col_adjusted)
-    return index_new
-
-def float_to_chrcm(list):
-    array=np.array(list)
-    chr_array=np.floor(array).astype(int)
-    scaled_cm_array=array-chr_array
-    print(scaled_cm_array)
-    
-    max_cm={1:294,10:184,11:162,12:176,13:130,14:117,15:151,16:132,17:129,18:121,19:107,2:275,20:111,21:65,22:76,3:228,4:221,5:209,6:199,7:191,8:179,9:181}
-    max_cm=[max_cm[i] for i in range(1,22+1)]
-    
-    max_cm_array=scaled_cm_array*pd.Series(max_cm).loc[chr_array-1]
-    cm_array=max_cm_array
-    df=pd.DataFrame([chr_array,cm_array],index=['CHR','CM']).T
-    #sumstats['CMcoord']=chr_array+sumstats['CM']/(pd.Series(max_cm).loc[chr_array-1]).values
-    return df
-
-#float_to_chrcm([1.5,20.5])
-"""
 
 def search_col(columns,queries,exact=False):
     cnames=[]
@@ -253,7 +197,7 @@ def parse_uni_regression_result(h2_total,pheno_code):
     print("finished loading","uni")
     return regression_result_uni
 
-def parse_par_regression_result(h2_total,pheno_code,suffix,quiet=False):    
+def parse_par_regression_result(h2_total,pheno_code,suffix,quiet=False,observed=True):    
     categories=search_col(h2_total.columns,['{}.Categories'.format(suffix)])
     categories_strip=[category[category.index('Categories')+11:] for category in categories]
     categories_strip=[category.replace('L2_0','') for category in categories_strip]
@@ -264,8 +208,12 @@ def parse_par_regression_result(h2_total,pheno_code,suffix,quiet=False):
         coef=h2_total['{}.Coefficients.{}L2_0'.format(suffix,category_strip)][pheno_code]
         coef_se=h2_total['{}.Coefficient SE.{}L2_0'.format(suffix,category_strip)][pheno_code]
         intercept=h2_total['{}.Intercept'.format(suffix)][pheno_code]
-        h2=h2_total['{}.Observed scale h2.{}L2_0'.format(suffix,category_strip)][pheno_code]
-        h2_se=h2_total['{}.Observed scale h2 SE.{}L2_0'.format(suffix,category_strip)][pheno_code]
+        if observed:
+            h2=h2_total['{}.Observed scale h2.{}L2_0'.format(suffix,category_strip)][pheno_code]
+            h2_se=h2_total['{}.Observed scale h2 SE.{}L2_0'.format(suffix,category_strip)][pheno_code]
+        else:
+            h2=h2_total['{}.Liability scale h2.{}L2_0'.format(suffix,category_strip)][pheno_code]
+            h2_se=h2_total['{}.Liability scale h2 SE.{}L2_0'.format(suffix,category_strip)][pheno_code]            
 
         regression_result_par={"coef":coef,"coef_se":coef_se,"h2":h2,"h2_se":h2_se,"intercept":intercept}
         regression_result_par['category']=suffix+'.'+category_strip
@@ -280,10 +228,10 @@ def parse_par_regression_result(h2_total,pheno_code,suffix,quiet=False):
     
     return regression_result_par_df
 
-def make_regression_result_list(h2_total,pheno_code,suffix_list=['cm300','cm128','cm64','cm32','cm16','cm8','cm4']):
+def make_regression_result_list(h2_total,pheno_code,suffix_list=['cm300','cm128','cm64','cm32','cm16','cm8','cm4'],observed=True):
     regression_result_list=[]
     for suffix in suffix_list:
-        regression_result_par_df=parse_par_regression_result(h2_total,pheno_code,suffix,quiet=True)
+        regression_result_par_df=parse_par_regression_result(h2_total,pheno_code,suffix,quiet=True,observed=observed)
         regression_result_list.append(regression_result_par_df)
     return pheno_code,regression_result_list
 
@@ -313,35 +261,7 @@ def description_to_short(desc,mode='pub',suffix="basic"):
     else:
         return np.nan
 
-"""
-def description_to_short(desc,mode='pub',data=0):
-    if data==0:
-        description_dict=phenotypes_par_filtered_description_dict
-    elif data==1:
-        description_dict=pleiotropic_loci_description_dict
-    elif data==2:
-        description_dict=correlation_description_dict
-        
-    if not mode in ['ori','pub','abbr','abbr_pub','abbr_pub_ori']:
-        raise    
-    if desc in description_dict.index:
-        if mode=='ori':
-            return desc
-        elif mode=='pub':
-            #print(correlation_description_dict['description_pub'].loc['Tobacco smoking: Ex-smoker'],description_dict['description_pub'].loc['Tobacco smoking: Ex-smoker'])
-            return description_dict['description_pub'].loc[desc]
-        elif mode=='abbr':
-            return description_dict['description_abbr'].loc[desc]
-        elif mode=='abbr_pub':
-            abbr=description_to_short(desc,mode='abbr',data=data)
-            return description_to_short(desc,mode='pub',data=data) if type(abbr)==float or abbr=='' else abbr
-        elif mode=='abbr_pub_ori':
-            abbr_pub=description_to_short(desc,mode='abbr_pub',data=data)
-            #print(abbr_pub)
-            return desc if type(abbr_pub)==float or abbr_pub=='' else abbr_pub
-    else:
-        return np.nan
-"""
+
 
 def category_to_format(category,mode):
     scale,chrN,start=category.split('.')
@@ -477,7 +397,7 @@ def load_variables3():
         chr_bp_max
     except:
         print("found that variables 'gwas_result_sample','chr_bp_max' were not loaded. trying to load the variables")
-        gwas_result_sample=pd.read_pickle('23115.pickle')
+        gwas_result_sample=pd.read_pickle('23115_irnt.pickle')
         chr_bp_max=[gwas_result_sample[gwas_result_sample.CHR==chrN].BP.iloc[-1] for chrN in range(1,22+1)]
         print("gwas_result_sample.shape:",gwas_result_sample.shape)
         

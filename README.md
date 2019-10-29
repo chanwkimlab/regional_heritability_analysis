@@ -1,17 +1,80 @@
 Regional Heritability Analysis `v1.0`
 ===================
+<!--
 [![DOI](https://zenodo.org/badge/.svg)](https://zenodo.org/badge/latestdoi/)
+-->
 
-Introduction
-------------
-`Regional Heritability Analysis`  is a software package for a
+## Introduction
 
-![Regional Heritability Atlas](github_images/donut.png)
+`Regional Heritability Analysis`  is a software package for estimating regional heritability of small genomic segments.
+
+
+![Regional Heritability Atlas](github_images/donut_leg_fat_percentage.png)
+
+The estimated regional heritability over different scales (chromosome, 128Mb, 64Mb, 32Mb, 16Mb, and 8Mb) simultaneously shown in a nested donut plot. The chromosome to which each segment belongs are indicated by background color of the segment. Fraction of heritability which each segment explains can be measured using outer circular gauge. For plots across all traits, visit our website (Regional Heritability Atlas, https://h2atlas.hanlab.snu.ac.kr). 
+
+
+## Functionality
+This package provides full pipeline of data analysis from downloading data to plotting results.
+* download GWAS summary statistics from Neale lab
+* download raw genotype data of 1000 Genome phase3 in plink format
+* munge summary statistics (wrapper for munge_sumstats.py from https://github.com/bulik/ldsc)
+* calculate LD score (wrapper for ldsc.py --l2 from https://github.com/bulik/ldsc)
+* running LD score regression (wrapper for ldsc.py --h2 from https://github.com/bulik/ldsc)
+* visualize analysis result
+    * ANOVA
+    * Nested donut plot
+    * correlation between phenotypes
+* building website (demo: Regional Heritability Atlas, https://h2atlas.hanlab.snu.ac.kr)
+
+
+
+
+## Directory structure
+
+```
+
+├── data
+│   ├── 1000G_Phase3_weights_hm3_no_MHC
+│   ├── 1000G_plink_EUR
+│   ├── 1000G_plink_EUR_temp
+│   ├── hapmap3_snps
+│   ├── out_sumstats
+│   ├── out_annot
+│   └── out_final
+├── web
+│   └── 1000G_Phase3_weights_h
+├── 1_downlaod_gwas_neale.ipynb
+├── 2_munge_1000G_genotype.ipynb
+├── 3_munge_sumstats.ipynb
+├── 4_make_annot_ldscore.ipynb
+├── 5_filtering_phenotypes_1.ipynb
+├── 5_filtering_phenotypes_2.ipynb
+├── 5_run_ldsc.ipynb
+├── 6_saving_and_basic_qc.ipynb
+├── 7_1_nested_donut_plot.ipynb
+├── 7_2_anova.ipynb
+├── 7_3_variance.ipynb
+├── 7_4_correlation.ipynb
+├── 7_5_pca.ipynb
+├── 7_6_pleiotropic.ipynb
+├── 7_7_alluvial.ipynb
+├── 7_8_basic_qc.ipynb
+├── 7_9_phenotype_info.ipynb
+├── 8_bokeh.ipynb
+
+```
+
+
+we used LD score regression to estimate regional heritability of small genomic segments and examined if the heritability is evenly distributed across segments in each phenotype. We split genome with various constant physical lengths, as it turned out that the distribution of heritability across segments depends on the segment size in some phenotypes. Additionally, using the regional heritability data, we investigated relationship among the traits included in our analysis and searched for pleiotropic loci contributing much of heritability to many traits. We present our analysis results of 497 traits in our interactive online database 
+
+
 
 We measure  <ins>(1) to xxxx</ins> and <ins>(2) to xxxxx</ins>.
 
-Instructions
--------------
+## Instructions
+### Overview of data flow
+![Regional Heritability Atlas](github_images/dataflow.png)
 ### Environment
 `Regional Heritability Analysis` is tested on `Linux`.
 
@@ -72,25 +135,20 @@ There are two usages.
 ### Running the test example at one go
 
 
-Greedy Algorithm
------------------
-xxxxxx
-
 License
 ---------
 This project is licensed under the terms of the MIT license.
 
 
-Citation
-----------
-If you use the software `Regional Heritability Analysis`, please cite [Kim et al. xxxxxxs. (under review) (2019)]
+## Citation
+If you use the software `Regional Heritability Analysis`, please cite [Kim and Han. Landscape of polygenicity of complex traits in UK Biobank. (under review) (2019)](www.)
 
-Reference
-------------
-1. [PLINK v1.9](www.cog-genomics.org/plink/2.0/) | Chang CC, Chow CC, Tellier LCAM, Vattikuti S, Purcell SM, Lee JJ Second-generation PLINK: rising to the challenge of larger and richer datasets. GigaScience, 4. (2015) doi:10.1186/s13742-015-0047-8
-2. [1000 Genome Phase 3 data](https://www.cog-genomics.org/plink/2.0/resources) | A global reference for human genetic variation, The 1000 Genomes Project Consortium, Nature 526, 68-74 (2015) doi:10.1038/nature15393
+## Reference
+1. [PLINK v1.9](www.cog-genomics.org/plink/2.0/) | Chang, Christopher C., et al. "Second-generation PLINK: rising to the challenge of larger and richer datasets." Gigascience 4.1 (2015): 7.
+2. [1000 Genome Phase 3 data](https://www.cog-genomics.org/plink/2.0/resources) | 1000 Genomes Project Consortium. "A global reference for human genetic variation." Nature 526.7571 (2015): 68.
+3. [LD Score regression](https://github.com/bulik/ldsc) | Bulik-Sullivan, Brendan K., et al. "LD Score regression distinguishes confounding from polygenicity in genome-wide association studies." Nature genetics 47.3 (2015): 291.
+3. [Genetic map](https://mathgen.stats.ox.ac.uk/impute/impute_v2.html) | Howie, Bryan N., Peter Donnelly, and Jonathan Marchini. "A flexible and accurate genotype imputation method for the next generation of genome-wide association studies." PLoS genetics 5.6 (2009): e1000529.
 
 
-Support
-----------
-This software was implemented by Chanwoo Kim. Please contact [hanlab.snu@gmail.com](mailto:hanlab.snu@gmail.com)
+## Support
+This software was implemented by Chanwoo Kim. Please contact [ch6845@snu.ac.kr](mailto:ch6845@snu.ac.kr)

@@ -1,0 +1,487 @@
+0,description,label
+50_irnt,Standing height,0
+M20,Diagnoses - main ICD10: M20 Acquired deformities of fingers and toes,0
+20002_1465,"Non-cancer illness code, self-reported: osteoarthritis",0
+20428,Professional informed about anxiety,0
+5110_irnt,6mm asymmetry angle (left),0
+3710,Length of menstrual cycle,0
+2744,Birth weight of first child,0
+20022_irnt,Birth weight,0
+1697,Comparative height size at age 10,0
+5111_irnt,3mm asymmetry angle (left),0
+20015_irnt,Sitting height,0
+20153_irnt,"Forced expiratory volume in 1-second (FEV1), predicted",0
+5099_irnt,3mm weak meridian (right),1
+20546_4,Substances taken for depression: Drugs or alcohol (more than once),1
+5119_irnt,3mm cylindrical power (left),1
+5097_irnt,6mm weak meridian (left),1
+5098_irnt,6mm weak meridian (right),1
+5132_irnt,3mm strong meridian (right),1
+5116_irnt,3mm cylindrical power (right),1
+5158_irnt,6mm asymmetry index (right),1
+30090_irnt,Platelet crit,2
+30110_irnt,Platelet distribution width,2
+D12,"Diagnoses - main ICD10: D12 Benign neoplasm of colon, rectum, anus and anal canal",2
+30100_irnt,Mean platelet (thrombocyte) volume,2
+30080_irnt,Platelet count,2
+4105_irnt,Heel bone mineral density (BMD) (left),3
+5105_irnt,6mm strong meridian angle (left),3
+5103_irnt,3mm weak meridian angle (left),3
+2463,Fractured/broken bones in last 5 years,3
+3148_irnt,Heel bone mineral density (BMD),3
+4100_irnt,Ankle spacing width (left),4
+3143_irnt,Ankle spacing width,4
+5084_irnt,Spherical power (right),5
+5085_irnt,Spherical power (left),5
+6147_1,"Reason for glasses/contact lenses: For short-sightedness, i.e. only or mainly for distance viewing such as driving, cinema etc (called 'myopia')",5
+6147_4,Reason for glasses/contact lenses: For 'astigmatism',5
+49_irnt,Hip circumference,6
+23098_irnt,Weight,6
+23118_irnt,Leg predicted mass (left),6
+20003_1140864752,Treatment/medication code: lansoprazole,6
+30020_irnt,Haemoglobin concentration,7
+30030_irnt,Haematocrit percentage,7
+30270_irnt,Mean sphered cell volume,7
+30060_irnt,Mean corpuscular haemoglobin concentration,7
+30040_irnt,Mean corpuscular volume,7
+30010_irnt,Red blood cell (erythrocyte) count,7
+30070_irnt,Red blood cell (erythrocyte) distribution width,7
+30260_irnt,Mean reticulocyte volume,7
+M13_ARTHROSIS,#Arthrosis,8
+23106_irnt,Impedance of whole body,8
+23107_irnt,Impedance of leg (right),8
+23109_irnt,Impedance of arm (right),8
+48_irnt,Waist circumference,9
+23104_irnt,Body mass index (BMI),9
+23116_irnt,Leg fat mass (left),9
+23119_irnt,Arm fat percentage (right),9
+23099_irnt,Body fat percentage,9
+23115_irnt,Leg fat percentage (left),9
+3606,Chest pain or discomfort walking normally,9
+K57,Diagnoses - main ICD10: K57 Diverticular disease of intestine,9
+1687,Comparative body size at age 10,9
+20433_irnt,Age at first episode of depression,9
+5265_irnt,Corneal resistance factor (left),10
+5257_irnt,Corneal resistance factor (right),10
+5256_irnt,Corneal hysteresis (right),10
+5264_irnt,Corneal hysteresis (left),10
+20128,Number of fluid intelligence questions attempted within time limit,11
+20016_irnt,Fluid intelligence score,11
+30280_irnt,Immature reticulocyte fraction,12
+30290_irnt,High light scatter reticulocyte percentage,12
+30240_irnt,Reticulocyte percentage,12
+5104_irnt,3mm strong meridian angle (left),13
+4195_irnt,Pulse wave reflection index,13
+4194_irnt,Pulse rate,13
+4196_irnt,Pulse wave peak to peak time,13
+3062_irnt,Forced vital capacity (FVC),13
+3064_irnt,Peak expiratory flow (PEF),13
+3063_irnt,Forced expiratory volume in 1-second (FEV1),13
+M16,Diagnoses - main ICD10: M16 Coxarthrosis [arthrosis of hip],13
+102_irnt,"Pulse rate, automated reading",13
+20154_irnt,"Forced expiratory volume in 1-second (FEV1), predicted percentage",13
+2714,Age when periods started (menarche),14
+2385,Relative age voice broke,14
+2207,Wears glasses or contact lenses,14
+30130_irnt,Monocyte count,15
+30190_irnt,Monocyte percentage,15
+5255_irnt,"Intra-ocular pressure, Goldmann-correlated (right)",16
+I84,Diagnoses - main ICD10: I84 Haemorrhoids,16
+5263_irnt,"Intra-ocular pressure, Goldmann-correlated (left)",16
+5254_irnt,"Intra-ocular pressure, corneal-compensated (right)",16
+5262_irnt,"Intra-ocular pressure, corneal-compensated (left)",16
+3786_irnt,Age asthma diagnosed,17
+3761_irnt,"Age hay fever, rhinitis or eczema diagnosed",17
+22147_irnt,Age asthma diagnosed by doctor,17
+30150,Eosinophill count,17
+20003_1140861998,Treatment/medication code: ventolin 100micrograms inhaler,17
+6152_8,"Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: Asthma",17
+22127,Doctor diagnosed asthma,17
+6152_100,"Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: None of the above",17
+22126,Doctor diagnosed hayfever or allergic rhinitis,17
+6152_9,"Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: Hayfever, allergic rhinitis or eczema",17
+20002_1387,"Non-cancer illness code, self-reported: hayfever/allergic rhinitis",17
+20002_1452,"Non-cancer illness code, self-reported: eczema/dermatitis",17
+30210_irnt,Eosinophill percentage,17
+20455_irnt,Age when last took cannabis,18
+2724,Had menopause,18
+6149_1,Mouth/teeth dental problems: Mouth ulcers,18
+30120_irnt,Lymphocyte count,18
+30180_irnt,Lymphocyte percentage,18
+30200_irnt,Neutrophill percentage,18
+CARDIAC_ARRHYTM,"Cardiac arrhytmias, COPD co-morbidities",19
+2395_1,Hair/balding pattern: Pattern 1,19
+2395_4,Hair/balding pattern: Pattern 4,19
+2395_2,Hair/balding pattern: Pattern 2,19
+2395_3,Hair/balding pattern: Pattern 3,19
+30140_irnt,Neutrophill count,20
+30220_irnt,Basophill percentage,20
+30000_irnt,White blood cell (leukocyte) count,20
+20002_1474,"Non-cancer illness code, self-reported: hiatus hernia",21
+12340_irnt,QRS duration,21
+6154_5,"Medication for pain relief, constipation, heartburn: Omeprazole (e.g. Zanprol)",21
+20003_1140865634,Treatment/medication code: omeprazole,21
+5556,FI9 : concept interpolation,22
+1548,Variation in diet,22
+6138_2,Qualifications: A levels/AS levels or equivalent,22
+1060,Time spent outdoors in winter,22
+4979,FI5 : family relationship calculation,22
+6164_3,Types of physical activity in last 4 weeks: Strenuous sports,22
+6162_3,Types of transport used (excluding work): Public transport,22
+110001,"Invitation to complete online 24-hour recall dietary questionnaire, acceptance",22
+2316,Wheeze or whistling in the chest in last year,22
+6141_1,"How are people in household related to participant: Husband, wife or partner",22
+1070,Time spent watching television (TV),22
+6138_4,Qualifications: CSEs or equivalent,22
+2110,Able to confide,22
+6159_3,Pain type(s) experienced in last month: Neck or shoulder pain,22
+738,Average total household income before tax,22
+M54,Diagnoses - main ICD10: M54 Dorsalgia,22
+6138_1,Qualifications: College or University degree,22
+6164_2,"Types of physical activity in last 4 weeks: Other exercises (eg: swimming, cycling, keep fit, bowling)",22
+2139_irnt,Age first had sexual intercourse,23
+2040,Risk taking,23
+6164_5,"Types of physical activity in last 4 weeks: Heavy DIY (eg: weeding, lawn mowing, carpentry, digging)",23
+874_irnt,Duration of walks,23
+4957,FI3 : word interpolation,23
+6159_5,Pain type(s) experienced in last month: Stomach or abdominal pain,23
+2149,Lifetime number of sexual partners,23
+20520,Recent worrying too much about different things,24
+12336_irnt,Ventricular rate,24
+20512,Recent feelings of foreboding,24
+20511,Recent poor appetite or overeating,24
+5507,Leg pain on walking : action taken,24
+20509,Recent inability to stop or control worrying,24
+2926,Number of unsuccessful stop-smoking attempts,24
+N92,"Diagnoses - main ICD10: N92 Excessive, frequent and irregular menstruation",24
+6150_100,Vascular/heart problems diagnosed by doctor: None of the above,25
+20110_8,Illnesses of mother: High blood pressure,25
+20003_1140866738,Treatment/medication code: atenolol,25
+20539,Frequency of inability to stop worrying during worst period of anxiety,25
+20003_1140860696,Treatment/medication code: lisinopril,25
+20003_1141194794,Treatment/medication code: bendroflumethiazide,25
+20003_1140879802,Treatment/medication code: amlodipine,25
+6177_2,"Medication for cholesterol, blood pressure or diabetes: Blood pressure medication",25
+6149_4,Mouth/teeth dental problems: Loose teeth,25
+4080_irnt,"Systolic blood pressure, automated reading",25
+6153_100,"Medication for cholesterol, blood pressure, diabetes, or take exogenous hormones: None of the above",25
+6153_2,"Medication for cholesterol, blood pressure, diabetes, or take exogenous hormones: Blood pressure medication",25
+4079_irnt,"Diastolic blood pressure, automated reading",25
+6177_100,"Medication for cholesterol, blood pressure or diabetes: None of the above",25
+20003_1140860806,Treatment/medication code: ramipril,25
+2966_irnt,Age high blood pressure diagnosed,25
+1717,Skin colour,26
+1747_3,"Hair colour (natural, before greying): Light brown",26
+1747_1,"Hair colour (natural, before greying): Blonde",26
+C_SKIN,,26
+C3_OTHER_SKIN,Other malignant neoplasms of skin,26
+1747_4,"Hair colour (natural, before greying): Dark brown",26
+1737,Childhood sunburn occasions,26
+C44,Diagnoses - main ICD10: C44 Other malignant neoplasms of skin,26
+1747_5,"Hair colour (natural, before greying): Black",26
+5001,FI7 : synonym,27
+6160_1,Leisure/social activities: Sports club or gym,27
+6179_6,Mineral and other dietary supplements: Selenium,27
+20454,Maximum frequency of taking cannabis,27
+6179_4,Mineral and other dietary supplements: Zinc,27
+845,Age completed full time education,27
+20531,Victim of sexual assault,27
+6138_100,Qualifications: None of the above,27
+22501_irnt,Year ended full time education,27
+6139_3,Gas or solid-fuel cooking/heating: An open solid fuel fire that you use regularly in winter time,27
+20453,Ever taken cannabis,27
+93_irnt,"Systolic blood pressure, manual reading",28
+94_irnt,"Diastolic blood pressure, manual reading",28
+1180,Morning/evening person (chronotype),29
+5087_irnt,Cylindrical power (right),29
+1220,Daytime dozing / sleeping (narcolepsy),29
+2217_irnt,Age started wearing glasses or contact lenses,29
+1170,Getting up in morning,29
+2375,Relative age of first facial hair,30
+5107_irnt,3mm strong meridian angle (right),30
+1757,Facial ageing,30
+IX_CIRCULATORY,Diseases of the circulatory system,30
+47_irnt,Hand grip strength (right),30
+46_irnt,Hand grip strength (left),30
+3456,Number of cigarettes currently smoked daily (current cigarette smokers),31
+6162_4,Types of transport used (excluding work): Cycle,31
+6179_2,Mineral and other dietary supplements: Glucosamine,31
+20002_1138,"Non-cancer illness code, self-reported: gastro-oesophageal reflux (gord) / gastric reflux",31
+3466,Time from waking to first cigarette,31
+3476,Difficulty not smoking for 1 day,31
+680_3,"Own or rent accommodation lived in: Rent - from local authority, local council, housing association",31
+1930,Miserableness,32
+XIII_MUSCULOSKELET,Diseases of the musculoskeletal system and connective tissue,32
+1990,Tense / 'highly strung',32
+1960,Fed-up feelings,32
+1920,Mood swings,32
+2050,Frequency of depressed mood in last 2 weeks,32
+1940,Irritability,32
+1970,Nervous feelings,32
+20459,General happiness with own health,32
+2010,Suffer from 'nerves',32
+2000,Worry too long after embarrassment,32
+1160,Sleep duration,32
+20505,Recent easy annoyance or irritability,32
+1950,Sensitivity / hurt feelings,32
+20127_irnt,Neuroticism score,32
+20425,Ever worried more than most people would in similar situation,32
+1150_2,Usual side of head for mobile phone use: Right,32
+1980,Worrier / anxious feelings,32
+4283,Number of rounds of numeric memory test performed,33
+4282,Maximum digits remembered correctly,33
+1190,Nap during day,34
+5012,FI8 : chained arithmetic,34
+20488,Physically abused by family as a child,34
+6159_100,Pain type(s) experienced in last month: None of the above,34
+6159_7,Pain type(s) experienced in last month: Knee pain,34
+2492,Taking other prescription medications,35
+6160_100,Leisure/social activities: None of the above,35
+1618,Alcohol usually taken with meals,35
+1568,Average weekly red wine intake,35
+6164_1,Types of physical activity in last 4 weeks: Walking for pleasure (not as a means of transport),35
+2178,Overall health rating,35
+924,Usual walking pace,35
+137,Number of treatments/medications taken,35
+135,Number of self-reported non-cancer illnesses,35
+4728,Leg pain on walking,35
+R07,Diagnoses - main ICD10: R07 Pain in throat and chest,35
+2335,Chest pain or discomfort,35
+4717,Shortness of breath walking on level ground,35
+2188,"Long-standing illness, disability or infirmity",35
+6160_2,Leisure/social activities: Pub or social club,36
+1090,Time spent driving,36
+4653,Ever highly irritable/argumentative for 2 days,36
+20116_1,Smoking status: Previous,36
+20116_0,Smoking status: Never,36
+20160,Ever smoked,36
+1249,Past tobacco smoking,36
+6138_6,"Qualifications: Other professional qualifications eg: nursing, teaching",37
+6162_2,Types of transport used (excluding work): Walk,37
+4570,Friendships satisfaction,37
+1050,Time spend outdoors in summer,37
+20450,Feelings of worthlessness during worst period of depression,37
+20421,"Ever felt worried, tense, or anxious for most of a month or longer",37
+2887,Number of cigarettes previously smoked daily,37
+1080,Time spent using computer,37
+20485,Ever contemplated self-harm,38
+20515,Recent trouble relaxing,38
+3849,Number of pregnancy terminations,38
+2100,"Seen a psychiatrist for nerves, anxiety, tension or depression",38
+20498,Felt very upset when reminded of stressful experience in past month,38
+20002_1286,"Non-cancer illness code, self-reported: depression",38
+20519,Recent feelings of tiredness or low energy,38
+20458,General happiness,38
+4968,FI4 : positional arithmetic,38
+20544_15,"Mental health problems ever diagnosed by a professional: Anxiety, nerves or generalized anxiety disorder",38
+2090,"Seen doctor (GP) for nerves, anxiety, tension or depression",38
+20497,Repeated disturbing thoughts of stressful experience in past month,38
+3436_irnt,Age started smoking in current smokers,38
+20496,Felt distant from other people in past month,38
+2129,Answered sexual history questions,39
+399_irnt,Number of incorrect matches in round,39
+XI_DIGESTIVE,Diseases of the digestive system,39
+2237,Plays computer games,39
+400_irnt,Time to complete round,39
+20107_3,Illnesses of father: Lung cancer,39
+2734,Number of live births,39
+1518,Hot drink temperature,39
+22502,Cough on most days,39
+22506_114,Tobacco smoking: Never smoked,40
+3799,Headaches for 3+ months,40
+22506_113,Tobacco smoking: Ex-smoker,40
+20023_irnt,Mean time to correctly identify matches,41
+1210,Snoring,41
+404_irnt,Duration to first press of snap-button in each round,41
+2257,Hearing difficulty/problems with background noise,41
+2247_0,Hearing difficulty/problems: No,41
+6154_2,"Medication for pain relief, constipation, heartburn: Ibuprofen (e.g. Nurofen)",41
+20018,Prospective memory result,42
+6149_6,Mouth/teeth dental problems: Dentures,42
+5106_irnt,6mm strong meridian angle (right),42
+20487,Felt hated by family member as a child,42
+3571,Back pain for 3+ months,42
+2030,Guilty feelings,42
+20111_12,Illnesses of siblings: Severe depression,42
+6138_3,Qualifications: O levels/GCSEs or equivalent,42
+20409,Frequency of feeling guilt or remorse after drinking alcohol in last year,42
+20489,Felt loved as a child,42
+M17,Diagnoses - main ICD10: M17 Gonarthrosis [arthrosis of knee],42
+5109_irnt,6mm asymmetry angle (right),42
+4803_14,"Tinnitus: Yes, but not now, but have in the past",43
+4803_0,"Tinnitus: No, never",43
+1558,Alcohol intake frequency.,43
+20117_0,Alcohol drinker status: Never,43
+20414,Frequency of drinking alcohol,43
+4990,FI6 : conditional arithmetic,44
+680_1,Own or rent accommodation lived in: Own outright (by you or someone in your household),44
+680_4,Own or rent accommodation lived in: Rent - from private landlord or letting agency,44
+5161_irnt,6mm regularity index (right),45
+ICDMAIN_ANY_ENTRY,Any ICDMAIN event in hilmo or causes of death,45
+6164_100,Types of physical activity in last 4 weeks: None of the above,45
+1200,Sleeplessness / insomnia,45
+4548,Health satisfaction,45
+2834,Bilateral oophorectomy (both ovaries removed),45
+K21,Diagnoses - main ICD10: K21 Gastro-oesophageal reflux disease,45
+6145_1,"Illness, injury, bereavement, stress in last 2 years: Serious illness, injury or assault to yourself",45
+20408,Frequency of memory loss due to drinking alcohol in last year,45
+20479,Ever thought that life not worth living,46
+20510,Recent feelings of depression,46
+4598,Ever depressed for a whole week,46
+2080,Frequency of tiredness / lethargy in last 2 weeks,46
+6177_1,"Medication for cholesterol, blood pressure or diabetes: Cholesterol lowering medication",47
+20003_1140861958,Treatment/medication code: simvastatin,47
+20002_1473,"Non-cancer illness code, self-reported: high cholesterol",47
+20003_1141146234,Treatment/medication code: atorvastatin,47
+6153_1,"Medication for cholesterol, blood pressure, diabetes, or take exogenous hormones: Cholesterol lowering medication",47
+5983_irnt,"ECG, heart rate",48
+6033_irnt,Maximum heart rate during fitness test,48
+1538_0,Major dietary changes in the last 5 years: No,49
+1538_1,"Major dietary changes in the last 5 years: Yes, because of illness",49
+30530_irnt,Sodium in urine,49
+6159_4,Pain type(s) experienced in last month: Back pain,49
+6162_1,Types of transport used (excluding work): Car/motor vehicle,49
+20550_1,"Activities undertaken to treat anxiety: Talking therapies, such as psychotherapy, counselling, group therapy or CBT",50
+20549_3,Substances taken for anxiety: Medication prescribed to you (for at least two weeks),50
+20446,Ever had prolonged feelings of sadness or depression,50
+20547_3,"Activities undertaken to treat depression: Other therapeutic activities such as mindfulness, yoga or art classes",50
+Z09,Diagnoses - main ICD10: Z09 Follow-up examination after treatment for conditions other than malignant neoplasms,50
+20441,Ever had prolonged loss of interest in normal activities,50
+20547_1,"Activities undertaken to treat depression: Talking therapies, such as psychotherapy, counselling, group therapy or CBT",50
+G6_NERPLEX,"Nerve, nerve root and plexus disorders",51
+VI_NERVOUS,Diseases of the nervous system,51
+G56,Diagnoses - main ICD10: G56 Mononeuropathies of upper limb,51
+G6_CARPTU,Carpal tunnel syndrome,51
+20417,"Tense, sore, or aching muscles during worst period of anxiety",51
+30520_irnt,Potassium in urine,52
+30510_irnt,Creatinine (enzymatic) in urine,52
+6149_100,Mouth/teeth dental problems: None of the above,52
+2644,"Light smokers, at least 100 smokes in lifetime",52
+20126_4,Bipolar and major depression status: Probable Recurrent major depression (moderate),53
+2473,Other serious medical condition/disability diagnosed by doctor,53
+5375_irnt,Longest period of unenthusiasm / disinterest,53
+1787,Maternal smoking around birth,53
+4631,Ever unenthusiastic/disinterested for a whole week,53
+20126_0,Bipolar and major depression status: No Bipolar or Depression,53
+2867_irnt,Age started smoking in former smokers,53
+20499,Ever sought or received professional help for mental distress,54
+20544_11,Mental health problems ever diagnosed by a professional: Depression,54
+20546_3,Substances taken for depression: Medication prescribed to you (for at least two weeks),54
+20530,Witnessed sudden violent death,54
+20500,Ever suffered mental distress preventing usual activities,54
+20448,Professional informed about depression,54
+4526,Happiness,55
+2070,Frequency of tenseness / restlessness in last 2 weeks,55
+4559,Family relationship satisfaction,55
+6145_6,"Illness, injury, bereavement, stress in last 2 years: Financial difficulties",55
+5160_irnt,3mm regularity index (right),55
+4581,Financial situation satisfaction,55
+20435,Difficulty concentrating during worst depression,56
+20536_0,Weight change during worst episode of depression: Stayed about the same or was on a diet,56
+1120,Weekly usage of mobile phone in last 3 months,56
+3591,Ever had hysterectomy (womb removed),56
+1588,Average weekly beer plus cider intake,56
+6160_3,Leisure/social activities: Religious group,56
+22146_irnt,Age hayfever or allergic rhinitis diagnosed by doctor,57
+C_BREAST_3,Malignant neoplasm of breast,57
+C50,Diagnoses - main ICD10: C50 Malignant neoplasm of breast,57
+20001_1002,"Cancer code, self-reported: breast cancer",57
+20416,Frequency of consuming six or more units of alcohol,58
+20418,Impact on normal roles during worst period of anxiety,58
+20405_0,"Ever had known person concerned about, or recommend reduction of, alcohol consumption: No",58
+20403,Amount of alcohol drunk on a typical drinking day,58
+20420_irnt,Longest period spent worried or anxious,58
+20003_1140884600,Treatment/medication code: metformin,59
+20107_9,Illnesses of father: Diabetes,59
+2443,Diabetes diagnosed by doctor,59
+6144_1,"Never eat eggs, dairy, wheat, sugar: Eggs or foods containing eggs",59
+4440,Average monthly spirits intake,59
+20110_9,Illnesses of mother: Diabetes,59
+20002_1220,"Non-cancer illness code, self-reported: diabetes",59
+20460,Belief that own life is meaningful,60
+4825,Noisy workplace,60
+6147_2,"Reason for glasses/contact lenses: For long-sightedness, i.e. for distance and near, but particularly for near tasks like reading (called 'hypermetropia')",60
+2784,Ever taken oral contraceptive pill,60
+3773,Knee pain for 3+ months,60
+2814,Ever used hormone-replacement therapy (HRT),60
+20548_7,Manifestations of mania or irritability: I was easily distracted,61
+20548_2,Manifestations of mania or irritability: I was more restless than usual,61
+20548_3,Manifestations of mania or irritability: My thoughts were racing,61
+20502,Ever had period extreme irritability,61
+6032_irnt,Maximum workload during fitness test,62
+5984_irnt,"ECG, load",62
+6153_4,"Medication for cholesterol, blood pressure, diabetes, or take exogenous hormones: Hormone replacement therapy",63
+20003_2038460150,Treatment/medication code: paracetamol,63
+20111_9,Illnesses of siblings: Diabetes,63
+6154_3,"Medication for pain relief, constipation, heartburn: Paracetamol",63
+6154_100,"Medication for pain relief, constipation, heartburn: None of the above",63
+6149_3,Mouth/teeth dental problems: Bleeding gums,63
+2365,Ever had prostate specific antigen (PSA) test,63
+20003_1140923346,Treatment/medication code: co-codamol,63
+6154_6,"Medication for pain relief, constipation, heartburn: Laxatives (e.g. Dulcolax, Senokot)",63
+1239,Current tobacco smoking,64
+XVIII_MISCFINDINGS,"Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified",64
+2020,"Loneliness, isolation",65
+20517,"Trouble falling or staying asleep, or sleeping too much",65
+2159,Ever had same-sex intercourse,65
+3005,Fracture resulting from simple fall,66
+20117_2,Alcohol drinker status: Current,66
+20117_1,Alcohol drinker status: Previous,66
+20535,Waking too early,66
+6144_5,"Never eat eggs, dairy, wheat, sugar: I eat all of the above",67
+6144_4,"Never eat eggs, dairy, wheat, sugar: Sugar or foods/drinks containing sugar",67
+6157_100,Why stopped smoking: None of the above,68
+6157_3,Why stopped smoking: Health precaution,68
+2664_5,Reason for reducing amount of alcohol drunk: Other reason,69
+2664_3,Reason for reducing amount of alcohol drunk: Health precaution,69
+20002_1226,"Non-cancer illness code, self-reported: hypothyroidism/myxoedema",70
+20003_1141191044,Treatment/medication code: levothyroxine sodium,70
+6159_1,Pain type(s) experienced in last month: Headache,71
+20002_1265,"Non-cancer illness code, self-reported: migraine",71
+5108_irnt,3mm asymmetry angle (right),71
+20536_1,Weight change during worst episode of depression: Gained weight,72
+R10,Diagnoses - main ICD10: R10 Abdominal and pelvic pain,72
+6179_100,Mineral and other dietary supplements: None of the above,72
+6179_1,Mineral and other dietary supplements: Fish oil (including cod liver oil),72
+2844,Had other major operations,73
+864,Number of days/week walked 10+ minutes,73
+20529,Victim of physically violent crime,74
+20107_6,Illnesses of father: Chronic bronchitis/emphysema,74
+6160_4,Leisure/social activities: Adult education class,74
+6164_4,"Types of physical activity in last 4 weeks: Light DIY (eg: pruning, watering the lawn)",74
+N39,Diagnoses - main ICD10: N39 Other disorders of urinary system,74
+20111_8,Illnesses of siblings: High blood pressure,75
+20111_100,Illnesses of siblings: None of the above (group 1),75
+20110_6,Illnesses of mother: Chronic bronchitis/emphysema,75
+1150_3,Usual side of head for mobile phone use: Equally left and right,75
+I9_IHD,"Ischaemic heart disease, wide definition",76
+6150_1,Vascular/heart problems diagnosed by doctor: Heart attack,76
+I9_CHD,Major coronary heart disease event,76
+20002_1074,"Non-cancer illness code, self-reported: angina",76
+20107_1,Illnesses of father: Heart disease,76
+I9_CORATHER,Coronary atherosclerosis,76
+20111_1,Illnesses of siblings: Heart disease,76
+20533,Trouble falling asleep,76
+6146_100,Attendance/disability/mobility allowance: None of the above,77
+6146_3,Attendance/disability/mobility allowance: Blue badge,77
+6146_2,Attendance/disability/mobility allowance: Disability living allowance,77
+6148_100,Eye problems/disorders: None of the above,78
+6148_4,Eye problems/disorders: Cataract,78
+I9_DISVEINLYMPH,"Diseases of veins, lymphatic vessels and lymph nodes, not elsewhere classified",79
+I83,Diagnoses - main ICD10: I83 Varicose veins of lower extremities,79
+20003_1140868226,Treatment/medication code: aspirin,80
+6154_1,"Medication for pain relief, constipation, heartburn: Aspirin",80
+K11_HERNIA,Hernia,81
+K40,Diagnoses - main ICD10: K40 Inguinal hernia,81
+K11_GALLBILPANC,"Disorders of gallbladder, biliary tract and pancreas",82
+K80,Diagnoses - main ICD10: K80 Cholelithiasis,82
+PULM_MEDICATIO_COMORB,Medication related adverse effects (Asthma/COPD),83
+H7_LENS,Disorders of lens,83
+ASTHMA_MEDICATIO_COMORB,Medication related adverse effects,83
+H26,Diagnoses - main ICD10: H26 Other cataract,83
+M23,Diagnoses - main ICD10: M23 Internal derangement of knee,84
+M13_MENISCUSDERANGEMENTS,Meniscus derangement,84
+ILD_DIFF_DG,ILD differential diagnosis,85
+X_RESPIRATORY,Diseases of the respiratory system,85
+K29,Diagnoses - main ICD10: K29 Gastritis and duodenitis,86
+K11_OTHGASTR,Other gastritis (incl. Duodenitis),86
