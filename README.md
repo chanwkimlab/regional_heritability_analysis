@@ -111,11 +111,11 @@ For building web database,
 1. `1_downlaod_gwas_neale.ipynb` Download UK Biobank GWAS summary statistics from Neale lab
 2. `2_munge_1000G_genotype.ipynb` Prepare raw genotype of 1000 Genome project Phase 3 for building LD score reference panel
 3. `3_munge_sumstats.ipynb` Munge summary statistics
-4. `4_make_annot_ldscore.ipynb` Build LD score reference panel. Make use of bash shell argument support. For example, run `jupyter nbconvert 4_make_annot_ldscore.ipynb --to script` and `python 4_make_annot_ldscore.py 64 bp`
+4. `4_make_annot_ldscore.ipynb` Build LD score reference panel. Make use of its supporting bash shell argument . For example, run `jupyter nbconvert 4_make_annot_ldscore.ipynb --to script` and `python 4_make_annot_ldscore.py 64 bp`
 5. Run LD score regression
     1. `5_filtering_phenotypes_1.ipynb` Filter phenotypes satisfiying QC conditions
     2. `5_filtering_phenotypes_2.ipynb`
-    3. `5_run_ldsc.ipynb` Build LD score reference panel. Make use of bash shell argument support. For example, run `jupyter nbconvert 5_run_ldsc.ipynb --to script` and `python 5_run_ldsc.py bp 64 10 0 500`
+    3. `5_run_ldsc.ipynb` Build LD score reference panel. Make use of its supporting bash shell argument. For example, run `jupyter nbconvert 5_run_ldsc.ipynb --to script` and `python 5_run_ldsc.py bp 64 10 0 500`
 6. `6_saving_and_basic_qc.ipynb` Save result and check quaility
 7. Analyze and visualizing result
     1. `7_1_nested_donut_plot.ipynb` Nested donut plot
