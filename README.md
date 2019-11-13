@@ -6,7 +6,7 @@
 
 ## Introduction
 
-`Regional Heritability Analysis`  is a software package for estimating regional heritability of small genomic segments. It uses LD score regression to estimate regional heritability of small genomic segments and examined if the heritability is evenly distributed across segments in each phenotype. Additionally, using the regional heritability data, we investigated relationship among the traits included in our analysis and searched for pleiotropic loci contributing much of heritability to many traits. For analysis result across all traits, visit our interactive database website (Regional Heritability Atlas, https://h2atlas.hanlab.snu.ac.kr). 
+`Regional Heritability Analysis`  is a software package for estimating regional heritability of small genomic segments. It uses LD score regression to estimate regional heritability of small genomic segments and examined if the heritability is evenly distributed across segments in each phenotype. Additionally, using the regional heritability data, we investigated relationship among the traits included in our analysis and searched for pleiotropic loci contributing much of heritability to many traits. For analysis result across all traits, visit our interactive database website (Regional Heritability Atlas, http://h2atlas.hanlab.snu.ac.kr). 
 
 ## Example
 ### Nested donut plot
@@ -24,18 +24,19 @@ The chromosome to which each segment belongs are indicated by color of the segme
 
 ## Main functionality
 This package provides full pipeline of data analysis from downloading data to visualizing results.
-* download GWAS summary statistics from Neale lab
-* download raw genotype data of 1000 Genome phase3 in plink format
-* munge summary statistics (wrapper for munge_sumstats.py from https://github.com/bulik/ldsc)
-* calculate LD score (wrapper for ldsc.py --l2 from https://github.com/bulik/ldsc)
-* run LD score regression (wrapper for ldsc.py --h2 from https://github.com/bulik/ldsc)
-* analyze and visualize result
+* Data pre-processing
+    * download GWAS summary statistics from Neale lab
+    * download raw genotype data of 1000 Genome phase3 in plink format
+    * munge summary statistics (wrapper for munge_sumstats.py from https://github.com/bulik/ldsc)
+    * calculate LD score (wrapper for ldsc.py --l2 from https://github.com/bulik/ldsc)
+    * run LD score regression (wrapper for ldsc.py --h2 from https://github.com/bulik/ldsc)
+* Analyze and visualize result
     * level of polygenicity
     * analysis of variance
     * nested donut plot
     * pleiotropic loci identification
     * correlation between phenotypes
-* build database website (demo: Regional Heritability Atlas, https://h2atlas.hanlab.snu.ac.kr)
+* Build database website (demo: Regional Heritability Atlas, http://h2atlas.hanlab.snu.ac.kr)
 
 
 ## Recommended (not necessary) directory structure 
@@ -142,6 +143,10 @@ If you use the software `Regional Heritability Analysis`, please cite [Kim and H
 3. [LD Score regression](https://github.com/bulik/ldsc) | Bulik-Sullivan, Brendan K., et al. "LD Score regression distinguishes confounding from polygenicity in genome-wide association studies." Nature genetics 47.3 (2015): 291.
 3. [Genetic map of GRCh build 37](https://mathgen.stats.ox.ac.uk/impute/impute_v2.html) | Howie, Bryan N., Peter Donnelly, and Jonathan Marchini. "A flexible and accurate genotype imputation method for the next generation of genome-wide association studies." PLoS genetics 5.6 (2009): e1000529.
 
+To check full list of references, please refer to our publication.
 
 ## Support
+If you have any question, please feel free to contact us [contact.h2atlas@gmail.com](mailto:contact.h2atlas@gmail.com)
+<!--
 This software was implemented by Chanwoo Kim. Please contact [ch6845@snu.ac.kr](mailto:ch6845@snu.ac.kr)
+-->
