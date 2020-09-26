@@ -10,16 +10,17 @@
 
 ## Example
 ### Nested donut plot
-![Regional Heritability Atlas](github_images/donut_leg_fat_percentage.png)
+![Regional Heritability Atlas](github_images/fig_1_a.png)
+![Regional Heritability Atlas](github_images/fig_1_b.png)
 
 The estimated regional heritability over different scales (chromosome, 128Mb, 64Mb, 32Mb, 16Mb, and 8Mb) simultaneously shown in a nested donut plot. The chromosome to which each segment belongs are indicated by background color of the segment. Fraction of heritability which each segment explains can be measured using outer circular gauge. 
 ### Comparison of regional heritability between two traits
-![Regional Heritability Atlas](github_images/comparison.png)
+![Regional Heritability Atlas](github_images/fig_s_2_a.png)
 
 The chromosome to which each segment belongs are indicated by color of the segment.
  
 ### Correlation between phenotypes calculated from regional heritability
-![Regional Heritability Atlas](github_images/correlation.png)
+![Regional Heritability Atlas](github_images/fig_4_a.png)
 
 
 ## Main functionality
